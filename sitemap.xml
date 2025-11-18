@@ -7,19 +7,19 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://adamshoots.art/about_me</loc>
+    <loc>https://adamshoots.art/about_me.html</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://adamshoots.art/contact</loc>
+    <loc>https://adamshoots.art/contact.html</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://adamshoots.art/pricing</loc>
+    <loc>https://adamshoots.art/pricing.html</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -5,32 +5,137 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adam Torres - Contact</title>
+  <title>Adam Torres - Pricing</title>
   <meta name="description"
-    content="Contact Adam Torres for photography services in Dallas. Book portrait sessions, headshots, events, and creative shoots.">
-  <meta name="keywords" content="contact photographer, Dallas photography, book photographer, Adam Torres contact">
+    content="Photography pricing for headshots, portrait sessions, events, and creative shoots. Transparent pricing for all photography services in Dallas.">
+  <meta name="keywords" content="photography pricing, headshot prices, portrait session prices, event photography pricing, Dallas photographer prices">
   <meta name="author" content="Adam Torres">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://adamshoots.art/contact" />
+  <link rel="canonical" href="https://adamshoots.art/pricing.html" />
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://adamshoots.art/contact">
-  <meta property="og:title" content="Contact Adam Torres - Photography Services">
-  <meta property="og:description" content="Contact Adam Torres for photography services in Dallas. Book portrait sessions, headshots, events, and creative shoots.">
+  <meta property="og:url" content="https://adamshoots.art/pricing.html">
+  <meta property="og:title" content="Photography Pricing - Adam Torres">
+  <meta property="og:description" content="Photography pricing for headshots, portrait sessions, events, and creative shoots. Transparent pricing for all services.">
   <meta property="og:site_name" content="Adam Torres Photography">
   <!-- Twitter -->
   <meta property="twitter:card" content="summary">
-  <meta property="twitter:url" content="https://adamshoots.art/contact">
-  <meta property="twitter:title" content="Contact Adam Torres - Photography Services">
-  <meta property="twitter:description" content="Contact Adam Torres for photography services in Dallas. Book portrait sessions, headshots, events, and creative shoots.">
+  <meta property="twitter:url" content="https://adamshoots.art/pricing.html">
+  <meta property="twitter:title" content="Photography Pricing - Adam Torres">
+  <meta property="twitter:description" content="Photography pricing for headshots, portrait sessions, events, and creative shoots. Transparent pricing for all services.">
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
-  <link rel="manifest" href="./assets/site.webmanifest" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/site.webmanifest" />
   <link rel="stylesheet" href="output.css" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .accordion-wrapper {
+      width: 100%;
+      max-width: 100%;
+    }
+    @media (min-width: 640px) {
+      .accordion-wrapper {
+        max-width: 700px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .accordion-wrapper {
+        max-width: 900px;
+      }
+    }
+    @media (min-width: 1280px) {
+      .accordion-wrapper {
+        max-width: 1100px;
+      }
+    }
+    .accordion-item {
+      border-bottom: 1px solid rgba(156, 163, 175, 0.3);
+    }
+    .dark .accordion-item {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .accordion-header {
+      width: 100%;
+      padding: 16px;
+      font-size: 1.1rem;
+      background: none;
+      color: inherit;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+      transition: background 0.3s ease;
+      font-family: 'Signika', sans-serif;
+    }
+    .accordion-header:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+    .dark .accordion-header:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 16px;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      color: rgba(107, 114, 128, 1);
+    }
+    .dark .accordion-content {
+      color: rgba(209, 213, 219, 1);
+    }
+    .accordion-item.active .accordion-content {
+      max-height: 800px;
+      padding: 12px 16px 16px;
+    }
+    .accordion-content a {
+      color: inherit;
+      text-decoration: underline;
+    }
+    .accordion-content h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      margin-top: 0;
+      color: inherit;
+    }
+    .accordion-content h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+      color: inherit;
+    }
+    .accordion-content h4:first-child {
+      margin-top: 0;
+    }
+    .accordion-content p {
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+    }
+    .accordion-content ul {
+      margin-bottom: 0.75rem;
+      padding-left: 1.5rem;
+      list-style-type: disc;
+    }
+    .accordion-content li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+      color: inherit;
+    }
+    .accordion-content li::marker {
+      color: inherit;
+    }
+    .accordion-content em {
+      font-style: italic;
+      display: block;
+      margin-top: 1rem;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+  </style>
   <!-- Alpine.js -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <!-- Start - Fonts -->
@@ -47,7 +152,7 @@
     <nav id="nav" x-data="{ open: false }" role="navigation" class="w-full">
       <div class="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
         <div class="mr-4 md:mr-8">
-          <a href="/" class="text-2xl font-signika font-bold">ADAM VENEGAS TORRES</a>
+          <a href="index.html" class="text-2xl font-signika font-bold">ADAM VENEGAS TORRES</a>
         </div>
         <div class="ml-auto md:hidden flex items-center justify-start">
           <button onclick="menuToggle()" @click="open = !open"
@@ -72,26 +177,26 @@
           <ul id="ulMenu"
             class="flex flex-col duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:items-center md:ml-auto md:mt-0 md:pt-0 md:border-0">
             <li class="group transition duration-300">
-              <a href="/" class="font-signika text-2xl">PORTFOLIO
+              <a href="index.html" class="font-signika text-2xl">PORTFOLIO
                 <span
                   class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
               </a>
             </li>
             <li class="group transition duration-300">
-              <a href="/about_me" class="font-signika text-2xl">ABOUT ME
-                <span
-                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
-              </a>
-            </li>
-            <li class="group transition duration-300">
-              <a href="/pricing" class="font-signika text-2xl">PRICING
+              <a href="about_me.html" class="font-signika text-2xl">ABOUT ME
                 <span
                   class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
               </a>
             </li>
             <li class="group transition duration-300 hidden md:block">
-              <a href="/contact" class="font-signika text-2xl">CONTACT
+              <a href="pricing.html" class="font-signika text-2xl">PRICING
                 <span class="hidden md:block h-0.5 bg-black dark:bg-white"></span>
+              </a>
+            </li>
+            <li class="group transition duration-300">
+              <a href="contact.html" class="font-signika text-2xl">CONTACT
+                <span
+                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
               </a>
             </li>
           </ul>
@@ -100,58 +205,92 @@
     </nav>
   </header>
   <!-- Content -->
-  <div class="container mx-auto">
-    <div class="grid grid-cols-2 gap-16">
-      <section class="col-span-2 md:col-span-1">
-        <div class="max-w-screen-md">
-          <h1 class="text-4xl pt-10 pb-8"><b>CONTACT</b></h1>
-
-          <form id="contact-form" class="space-y-8" action="https://formspree.io/f/mqawrnoz" method="POST">
-            <div id="form-message" class="hidden p-4 mb-4 text-sm rounded-lg" role="alert"></div>
-            <input type="hidden" name="_to" value="adam.j.tor@gmail.com" />
-            <input type="hidden" name="_subject" value="New Contact Form Submission from Portfolio" />
-            <input type="text" name="_gotcha" style="display:none" />
-            <div>
-              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
-                email</label>
-              <input type="email" id="email" name="email"
-                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                placeholder="example@gmail.com" required />
-            </div>
-            <div>
-              <label for="subject"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-              <input type="text" id="subject" name="subject"
-                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                placeholder="Let me know how I can help you" required />
-            </div>
-            <div class="sm:col-span-2">
-              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
-                message</label>
-              <textarea id="message" name="message" rows="6"
-                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Leave a comment..." required></textarea>
-            </div>
-            <button type="submit" id="submit-btn"
-              class="py-3 px-5 text-sm font-medium text-center bg-black dark:bg-white text-white dark:text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-              Send message
-            </button>
-          </form>
-        </div>
-      </section>
-      <div class="col-span-2 md:col-span-1 flex relative">
-        <div
-          class="bg-white dark:bg-neutral-900 p-5 pb-20 m-6 md:m-12 shadow-lg border border-gray-100 dark:border-neutral-800  hover:rotate-0 transition duration-500 rotate-6 relative">
-          <picture>
-            <source srcset="./assets/PHOTOS/Basketball-setup-3x2.webp" type="image/webp">
-            <img
-              src="./assets/PHOTOS/Basketball-setup-3x2.jpg"
-              alt="Basketball setup" class="flex flex-col aspect-square w-full object-cover h-auto max-h-full" loading="lazy" />
-          </picture>
+  <div class="container mx-auto py-10">
+    <h1 class="text-4xl pt-10 pb-8"><b>PRICING</b></h1>
+    
+    <div class="accordion-wrapper w-full max-w-3xl mx-auto">
+      <div class="accordion-item">
+        <button class="accordion-header">Individual Headshots</button>
+        <div class="accordion-content">
+          <h4>Raw Photos</h4>
+          <ul>
+            <li>$45</li>
+          </ul>
+          
+          <h4>Edited & Color Graded</h4>
+          <ul>
+            <li>$65</li>
+          </ul>
+          <p>Perfect for resume updates, auditions, or quick headshots</p>
         </div>
       </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Group Headshots</button>
+        <div class="accordion-content">
+          <h4>Raw Photos</h4>
+          <ul>
+            <li>$50 +$2 for each additional person</li>
+          </ul>
+          
+          <h4>Edited & Color Graded</h4>
+          <ul>
+            <li>$65 +$2 per additional person</li>
+          </ul>
+          <p>Includes group pictures and quick headshots for Organizations</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Portrait Sessions</button>
+        <div class="accordion-content">
+            <h4>Portraits, Family Photos, Senior Portraits, Couples Photos, Etc.</h4>
+            <ul>
+              <li>$100 per session + $25 for every additional hour</li>
+            </ul>
+
+            <p>Includes color grading and basic editing</p>
+          </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Parties & Events</button>
+        <div class="accordion-content">
+            <h4>Parties, Events, Gatherings, Etc.</h4>
+            <ul>
+              <li>$45 per hour (2 hour minimum)</li>
+            </ul>
+            
+            <p>Perfect for candid moments, group interactions, and event highlights</p>
+          </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Student Organizations & Campus Clubs</button>
+        <div class="accordion-content">
+            <h4>General Photography, Group Pictures, Etc.</h4>
+            <ul>
+              <li>$35 per hour</li>
+            </ul>
+            <p>Budget-friendly option for student-led events and campus activities</p>
+          </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Creative Shoots</button>
+        <div class="accordion-content">
+            <h4>Raw Photos</h4>
+            <ul>
+              <li>$50 per hour</li>
+            </ul>
+            
+            <h4>Edited & Color Graded</h4>
+            <ul>
+              <li>$75 per hour</li>
+            </ul>
+            <p>Great for experimental ideas, portfolios, or concept-based projects</p>
+          </div>
+      </div>
     </div>
+    <p class="mt-8 text-center text-sm text-gray-600 dark:text-gray-400">All photos are delivered digitally</p>
+    <p class="mt-8 text-center text-sm text-gray-600 dark:text-gray-400">All purchases are final</p>
   </div>
+
   <!-- Footer -->
   <footer>
     <div class="max-w-screen-xl py-16 mx-auto">
@@ -198,63 +337,21 @@
   <script src="fade_in.js"></script>
   <script src="menu.js"></script>
   <script>
-    // Formspree Configuration
-    // To set up Formspree:
-    // 1. Go to https://formspree.io/ and create a free account
-    // 2. Create a new form
-    // 3. Copy your form endpoint (it will look like: https://formspree.io/f/xxxxxxxxxx)
-    // 4. Replace 'YOUR_FORM_ID' in the form action above with your form ID (the xxxxxxxxxx part)
-    // 5. The form will automatically send emails to adam.j.tor@gmail.com
+    const headers = document.querySelectorAll(".accordion-header");
 
-    // Handle form submission with AJAX to prevent page redirect
-    const form = document.getElementById('contact-form');
-    const submitBtn = document.getElementById('submit-btn');
-    const messageDiv = document.getElementById('form-message');
+    headers.forEach((header) => {
+      header.addEventListener("click", () => {
+        const item = header.parentElement;
+        item.classList.toggle("active");
 
-    form.addEventListener('submit', async function(event) {
-      event.preventDefault(); // Prevent default form submission
-      
-      // Disable submit button
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Sending...';
-      messageDiv.classList.add('hidden');
-
-      // Get form data
-      const formData = new FormData(form);
-      
-      try {
-        // Submit form via AJAX
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: formData,
-          headers: {
-            'Accept': 'application/json'
-          }
+        // Close others
+        headers.forEach((h) => {
+          if (h !== header) h.parentElement.classList.remove("active");
         });
-
-        if (response.ok) {
-          // Success
-          messageDiv.className = 'p-4 mb-4 text-sm rounded-lg bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
-          messageDiv.textContent = 'Message sent successfully! I\'ll get back to you soon.';
-          messageDiv.classList.remove('hidden');
-          form.reset(); // Clear the form
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'Send message';
-        } else {
-          // Error from Formspree
-          const data = await response.json();
-          throw new Error(data.error || 'Failed to send message');
-        }
-      } catch (error) {
-        // Network error or other error
-        messageDiv.className = 'p-4 mb-4 text-sm rounded-lg bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200';
-        messageDiv.textContent = 'Failed to send message. Please try again or email me directly at adam.j.tor@gmail.com';
-        messageDiv.classList.remove('hidden');
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send message';
-      }
+      });
     });
   </script>
 </body>
 
 </html>
+

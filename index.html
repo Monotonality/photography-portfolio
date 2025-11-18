@@ -24,12 +24,12 @@
   <meta property="twitter:title" content="Adam Torres - Photography Portfolio">
   <meta property="twitter:description" content="Dallas-based photographer specializing in portrait sessions, headshots, events, and creative photography.">
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="dist/assets/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="16x16" href="dist/assets/favicon-16x16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="dist/assets/favicon-32x32.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="dist/assets/apple-touch-icon.png" />
-  <link rel="manifest" href="dist/assets/site.webmanifest" />
-  <link rel="stylesheet" href="dist/output.css" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+  <link rel="stylesheet" href="output.css" />
   <link rel="stylesheet" href="styles.css" />
   <!-- Alpine.js -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -47,7 +47,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      content: ["./dist/*.{html,js}"],
+      content: ["./*.{html,js}"],
       theme: {
         extend:
                 {
@@ -70,7 +70,7 @@
     <nav id="nav" x-data="{ open: false }" role="navigation" class="w-full">
       <div class="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
         <div class="mr-4 md:mr-8">
-          <a href="/" class="text-2xl font-signika font-bold">ADAM VENEGAS TORRES</a>
+          <a href="index.html" class="text-2xl font-signika font-bold">ADAM VENEGAS TORRES</a>
         </div>
         <div class="ml-auto md:hidden flex items-center justify-start">
           <button onclick="menuToggle()" @click="open = !open"
@@ -95,24 +95,24 @@
           <ul id="ulMenu"
             class="flex flex-col duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:items-center md:ml-auto md:mt-0 md:pt-0 md:border-0">
             <li class="group transition duration-300 hidden md:block">
-              <a href="/" class="font-signika text-2xl tap-highlight-transparent">PORTFOLIO
+              <a href="index.html" class="font-signika text-2xl tap-highlight-transparent">PORTFOLIO
                 <span class="hidden md:block h-0.5 bg-black dark:bg-white"></span>
               </a>
             </li>
             <li class="group transition duration-300">
-              <a href="/about_me" class="font-signika text-2xl tap-highlight-transparent">ABOUT ME
+              <a href="about_me.html" class="font-signika text-2xl tap-highlight-transparent">ABOUT ME
                 <span
                   class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
               </a>
             </li>
             <li class="group transition duration-300">
-              <a href="/pricing" class="font-signika text-2xl tap-highlight-transparent">PRICING
+              <a href="pricing.html" class="font-signika text-2xl tap-highlight-transparent">PRICING
                 <span
                   class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
               </a>
             </li>
             <li class="group transition duration-300">
-              <a href="/contact" class="font-signika text-2xl tap-highlight-transparent">CONTACT
+              <a href="contact.html" class="font-signika text-2xl tap-highlight-transparent">CONTACT
                 <span
                   class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
               </a>
@@ -131,39 +131,39 @@
           <div class="flex w-full md:w-1/2 flex-wrap">
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/standing-bull-fighter-2x3.webp"
+                <a href="assets/PHOTOS/standing-bull-fighter-2x3.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/standing-bull-fighter-2x3.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/standing-bull-fighter-2x3.webp" type="image/webp">
                     <img alt="Standing bull fighter"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/standing-bull-fighter-2x3.jpg" loading="lazy" />
+                      src="assets/PHOTOS/standing-bull-fighter-2x3.jpg" loading="lazy" />
                   </picture>
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/man-singing-2x3.webp"
+                <a href="assets/PHOTOS/man-singing-2x3.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/man-singing-2x3.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/man-singing-2x3.webp" type="image/webp">
                     <img alt="Man singing"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/man-singing-2x3.jpg" loading="lazy" />
+                      src="assets/PHOTOS/man-singing-2x3.jpg" loading="lazy" />
                   </picture>
                 </a>
               </div>
             </div>
             <div class="w-full p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/drummer-side-profile-2x3.webp"
+                <a href="assets/PHOTOS/drummer-side-profile-2x3.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/drummer-side-profile-2x3.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/drummer-side-profile-2x3.webp" type="image/webp">
                     <img alt="Drummer side profile"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/drummer-side-profile-2x3.jpg" loading="lazy" />
+                      src="assets/PHOTOS/drummer-side-profile-2x3.jpg" loading="lazy" />
                   </picture>
                 </a>
               </div>
@@ -172,65 +172,65 @@
           <div class="flex w-full md:w-1/2 flex-wrap">
             <div class="w-full p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/dying-bull-bleeding-3x2.webp"
+                <a href="assets/PHOTOS/dying-bull-bleeding-3x2.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/dying-bull-bleeding-3x2.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/dying-bull-bleeding-3x2.webp" type="image/webp">
                     <img alt="Dying bull bleeding"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/dying-bull-bleeding-3x2.jpg" loading="lazy" />
+                      src="assets/PHOTOS/dying-bull-bleeding-3x2.jpg" loading="lazy" />
                   </picture>
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/enticing-bull-to-charge-2x3.webp"
+                <a href="assets/PHOTOS/enticing-bull-to-charge-2x3.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/enticing-bull-to-charge-2x3.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/enticing-bull-to-charge-2x3.webp" type="image/webp">
                     <img alt="Enticing bull to charge"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/enticing-bull-to-charge-2x3.jpg" loading="lazy" />
+                      src="assets/PHOTOS/enticing-bull-to-charge-2x3.jpg" loading="lazy" />
                   </picture>
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/injured-bull-2x3.webp"
+                <a href="assets/PHOTOS/injured-bull-2x3.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/injured-bull-2x3.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/injured-bull-2x3.webp" type="image/webp">
                     <img alt="Injured bull"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/injured-bull-2x3.jpg" loading="lazy" />
+                      src="assets/PHOTOS/injured-bull-2x3.jpg" loading="lazy" />
                   </picture>
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/friends-hugging-3x2.webp"
+                <a href="assets/PHOTOS/friends-hugging-3x2.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/friends-hugging-3x2.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/friends-hugging-3x2.webp" type="image/webp">
                     <img alt="Friends hugging"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/friends-hugging-3x2.jpg" loading="lazy" />
+                      src="assets/PHOTOS/friends-hugging-3x2.jpg" loading="lazy" />
                   </picture>
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/frontal-bull-dodge-2x3.webp"
+                <a href="assets/PHOTOS/frontal-bull-dodge-2x3.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/frontal-bull-dodge-2x3.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/frontal-bull-dodge-2x3.webp" type="image/webp">
                     <img alt="Frontal bull dodge"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/frontal-bull-dodge-2x3.jpg" loading="lazy" />
+                      src="assets/PHOTOS/frontal-bull-dodge-2x3.jpg" loading="lazy" />
                   </picture>
                 </a>
               </div>
@@ -240,65 +240,65 @@
           <div class="flex w-full md:w-1/2 flex-wrap">
             <div class="w-full p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/Man-dunking-3x2.webp"
+                <a href="assets/PHOTOS/Man-dunking-3x2.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/Man-dunking-3x2.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/Man-dunking-3x2.webp" type="image/webp">
                     <img alt="Man dunking"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/Man-dunking-3x2.jpg" loading="lazy" />
+                      src="assets/PHOTOS/Man-dunking-3x2.jpg" loading="lazy" />
                   </picture>
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/leading-charging-bull-2x3.webp"
+                <a href="assets/PHOTOS/leading-charging-bull-2x3.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/leading-charging-bull-2x3.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/leading-charging-bull-2x3.webp" type="image/webp">
                     <img alt="Leading charging bull"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/leading-charging-bull-2x3.jpg" loading="lazy" />
+                      src="assets/PHOTOS/leading-charging-bull-2x3.jpg" loading="lazy" />
                   </picture>
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/tired-bull-fighter-2x3.webp"
+                <a href="assets/PHOTOS/tired-bull-fighter-2x3.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/tired-bull-fighter-2x3.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/tired-bull-fighter-2x3.webp" type="image/webp">
                     <img alt="Tired bull fighter"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/tired-bull-fighter-2x3.jpg" loading="lazy" />
+                      src="assets/PHOTOS/tired-bull-fighter-2x3.jpg" loading="lazy" />
                   </picture>
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/man-with-blue-guitar-2x3.webp"
+                <a href="assets/PHOTOS/man-with-blue-guitar-2x3.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/man-with-blue-guitar-2x3.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/man-with-blue-guitar-2x3.webp" type="image/webp">
                     <img alt="Man with blue guitar"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/man-with-blue-guitar-2x3.jpg" loading="lazy" />
+                      src="assets/PHOTOS/man-with-blue-guitar-2x3.jpg" loading="lazy" />
                   </picture>
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/matador-back-turned-2x3.webp"
+                <a href="assets/PHOTOS/matador-back-turned-2x3.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/matador-back-turned-2x3.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/matador-back-turned-2x3.webp" type="image/webp">
                     <img alt="Matador back turned"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/matador-back-turned-2x3.jpg" loading="lazy" />
+                      src="assets/PHOTOS/matador-back-turned-2x3.jpg" loading="lazy" />
                   </picture>
                 </a>
               </div>
@@ -307,40 +307,40 @@
           <div class="flex w-full md:w-1/2 flex-wrap">
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/two-friends-2x3.webp"
+                <a href="assets/PHOTOS/two-friends-2x3.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/two-friends-2x3.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/two-friends-2x3.webp" type="image/webp">
                     <img alt="Two friends"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/two-friends-2x3.JPG" loading="lazy" />
+                      src="assets/PHOTOS/two-friends-2x3.JPG" loading="lazy" />
                   </picture>
                 </a>
               </div>
             </div>
             <div class="w-full md:w-1/2 p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/bull-fighter-dodging-3x2.webp"
+                <a href="assets/PHOTOS/bull-fighter-dodging-3x2.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/bull-fighter-dodging-3x2.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/bull-fighter-dodging-3x2.webp" type="image/webp">
                     <img alt="Bull fighter dodging"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/bull-fighter-dodging-3x2.jpg" loading="lazy" />
+                      src="assets/PHOTOS/bull-fighter-dodging-3x2.jpg" loading="lazy" />
                   </picture>
                 </a>
               </div>
             </div>
             <div class="w-full p-1">
               <div class="overflow-hidden h-full w-full">
-                <a href="dist/assets/PHOTOS/matador-final-rally-2x3.webp"
+                <a href="assets/PHOTOS/matador-final-rally-2x3.webp"
                   data-fancybox="gallery">
                   <picture>
-                    <source srcset="dist/assets/PHOTOS/matador-final-rally-2x3.webp" type="image/webp">
+                    <source srcset="assets/PHOTOS/matador-final-rally-2x3.webp" type="image/webp">
                     <img
                       alt="Matador final rally"
                       class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                      src="dist/assets/PHOTOS/matador-final-rally-2x3.jpg" loading="lazy" />
+                      src="assets/PHOTOS/matador-final-rally-2x3.jpg" loading="lazy" />
                   </picture>
                 </a>
               </div>
@@ -395,8 +395,8 @@
   <script>
     Fancybox.bind("[data-fancybox]", {});
   </script>
-  <script src="dist/fade_in.js"></script>
-  <script src="dist/menu.js"></script>
+  <script src="fade_in.js"></script>
+  <script src="menu.js"></script>
 </body>
 
 </html>
