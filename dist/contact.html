@@ -10,6 +10,10 @@
     content="Hello there, I'm Adam Torres – an intrepid explorer through the lens, on a relentless quest to capture the world's boundless wonders. Join me in unraveling the extraordinary through my lens as I embark on a visual journey like no other.">
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+  <link rel="manifest" href="./assets/site.webmanifest" />
   <link rel="stylesheet" href="output.css" />
   <link rel="stylesheet" href="styles.css" />
   <!-- Alpine.js -->
@@ -28,7 +32,7 @@
     <nav id="nav" x-data="{ open: false }" role="navigation" class="w-full">
       <div class="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
         <div class="mr-4 md:mr-8">
-          <a href="../index.html" class="text-2xl font-signika font-bold">ADAM TORRES</a>
+          <a href="../index.html" class="text-2xl font-signika font-bold">ADAM VENEGAS TORRES</a>
         </div>
         <div class="ml-auto md:hidden flex items-center justify-start">
           <button onclick="menuToggle()" @click="open = !open"
@@ -65,6 +69,12 @@
               </a>
             </li>
             <li class="group transition duration-300">
+              <a href="pricing.html" class="font-signika text-2xl">PRICING
+                <span
+                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+              </a>
+            </li>
+            <li class="group transition duration-300 hidden md:block">
               <a href="contact.html" class="font-signika text-2xl">CONTACT
                 <span class="hidden md:block h-0.5 bg-black dark:bg-white"></span>
               </a>
